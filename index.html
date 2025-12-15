@@ -7,291 +7,442 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">YECN</span>
-                <span class="logo-subtitle">Youth European Cooperatives Network</span>
+    <!-- Premium Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-wrapper">
+            <div class="nav-brand">
+                <div class="brand-icon">
+                    <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="23" stroke="url(#gradient)" stroke-width="3"/>
+                        <path d="M25 10L30 20L40 22L32 30L34 40L25 35L16 40L18 30L10 22L20 20L25 10Z" fill="url(#gradient)"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0" y1="0" x2="50" y2="50">
+                                <stop offset="0%" stop-color="#FF6B6B"/>
+                                <stop offset="50%" stop-color="#4ECDC4"/>
+                                <stop offset="100%" stop-color="#45B7D1"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">YECN</span>
+                    <span class="brand-tagline">Youth European Cooperatives</span>
+                </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#why-join" class="nav-link">Why Join</a></li>
-                <li><a href="#governance" class="nav-link">Governance</a></li>
-                <li><a href="#members" class="nav-link">Members</a></li>
-                <li><a href="#contact" class="nav-link nav-cta">Get Involved</a></li>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#why-join">Why Join</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#resources">Resources</a></li>
             </ul>
+            <a href="#join" class="nav-btn">Join Network</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Epic Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="hero-overlay"></div>
-            <div class="hero-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="hero-grid"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Empowering Europe's Young Cooperators
+            </div>
+            
+            <h1 class="hero-heading">
+                Shape the Future of
+                <span class="gradient-text">European Cooperation</span>
+            </h1>
+            
+            <p class="hero-text">
+                Join 500+ young innovators across 20+ countries building the cooperative movement of tomorrow
+            </p>
+            
+            <div class="hero-cta">
+                <a href="#join" class="btn btn-gradient">
+                    <span>Become a Member</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#about" class="btn btn-glass">
+                    <span>Discover More</span>
+                </a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 10C13.2386 10 11 12.2386 11 15C11 17.7614 13.2386 20 16 20C18.7614 20 21 17.7614 21 15C21 12.2386 18.7614 10 16 10Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Young Members</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L20 12L28 13L22 19L24 28L16 23L8 28L10 19L4 13L12 12L16 4Z" stroke="currentColor" stroke-width="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="6" y="8" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 12H26" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="11" cy="18" r="1.5" fill="currentColor"/>
+                            <circle cx="16" cy="18" r="1.5" fill="currentColor"/>
+                            <circle cx="21" cy="18" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Annual Events</div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="hero-content">
-            <div class="hero-badge">Welcome to the Future of European Cooperation</div>
-            <h1 class="hero-title">
-                <span class="gradient-text">Youth European</span><br>
-                Cooperatives Network
-            </h1>
-            <p class="hero-description">
-                Empowering young cooperators across Europe to learn, connect, and shape the future of the cooperative movement
-            </p>
-            <div class="hero-buttons">
-                <a href="#members" class="btn btn-primary">Join Our Network</a>
-                <a href="#about" class="btn btn-secondary">Learn More</a>
+        
+        <div class="hero-image">
+            <div class="image-card card-1">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="Young professionals collaborating">
             </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-label">Young Cooperators</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">20+</div>
-                    <div class="stat-label">Countries</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">100+</div>
-                    <div class="stat-label">Events Annually</div>
-                </div>
+            <div class="image-card card-2">
+                <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&q=80" alt="Team meeting">
+            </div>
+            <div class="image-card card-3">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80" alt="Conference attendees">
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section section-white">
+    <section id="about" class="section-about">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge">About YECN</span>
-                <h2 class="section-title">Building the Future of Cooperation</h2>
-                <p class="section-subtitle">
-                    The Youth European Cooperatives Network is a vibrant platform giving voice and opportunities to young cooperators across Europe
-                </p>
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label">About YECN</span>
+                    <h2 class="section-heading">Building Tomorrow's Cooperative Movement</h2>
+                    <p class="section-text">
+                        The Youth European Cooperatives Network (YECN) is a vibrant community giving voice to young cooperators across Europe. We're building a platform where innovation meets tradition, and where the next generation shapes the future of cooperation.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-mini">
+                            <div class="feature-mini-icon">🌍</div>
+                            <div>
+                                <h4>Pan-European Network</h4>
+                                <p>Connect across borders</p>
+                            </div>
+                        </div>
+                        <div class="feature-mini">
+                            <div class="feature-mini-icon">🚀</div>
+                            <div>
+                                <h4>Innovation Hub</h4>
+                                <p>Drive cooperative evolution</p>
+                            </div>
+                        </div>
+                        <div class="feature-mini">
+                            <div class="feature-mini-icon">🤝</div>
+                            <div>
+                                <h4>Youth Leadership</h4>
+                                <p>Lead the movement</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="Team collaboration">
+                    </div>
+                    <div class="floating-card">
+                        <div class="floating-icon">✨</div>
+                        <h4>Active Community</h4>
+                        <p>Growing every day</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Why Join Section -->
-    <section id="why-join" class="section section-gradient">
+    <section id="why-join" class="section-why">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge light">Why Join YECN</span>
-                <h2 class="section-title light">Join Our Incredible Community</h2>
+            <div class="section-header-center">
+                <span class="section-label light">Why Join YECN</span>
+                <h2 class="section-heading light">Unlock Incredible Opportunities</h2>
+                <p class="section-text light">Join our community and access exclusive benefits designed for young cooperators</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path d="M20 5L25 15L35 16.25L27.5 23.75L29.5 35L20 29.5L10.5 35L12.5 23.75L5 16.25L15 15L20 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-visual">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Learning and development">
+                        <div class="benefit-overlay"></div>
                     </div>
-                    <h3 class="feature-title">Learn & Exchange</h3>
-                    <p class="feature-description">
-                        Connect with other young cooperators, exchange experiences, skills and best practices across Europe
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path d="M33.3333 20C33.3333 27.3638 27.3638 33.3333 20 33.3333C12.6362 33.3333 6.66667 27.3638 6.66667 20C6.66667 12.6362 12.6362 6.66667 20 6.66667C27.3638 6.66667 33.3333 12.6362 33.3333 20Z" stroke="currentColor" stroke-width="2"/>
-                            <path d="M20 13.3333V20L25 25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Exclusive Opportunities</h3>
-                    <p class="feature-description">
-                        Access conferences, workshops, projects, and networking events at national and EU level
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path d="M20 25C22.7614 25 25 22.7614 25 20C25 17.2386 22.7614 15 20 15C17.2386 15 15 17.2386 15 20C15 22.7614 17.2386 25 20 25Z" stroke="currentColor" stroke-width="2"/>
-                            <path d="M20 5V8.33333M20 31.6667V35M35 20H31.6667M8.33333 20H5M30.6066 9.39339L28.2843 11.7157M11.7157 28.2843L9.39339 30.6066M30.6066 30.6066L28.2843 28.2843M11.7157 11.7157L9.39339 9.39339" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Create Impact</h3>
-                    <p class="feature-description">
-                        Be part of a community creating opportunities for young cooperators across the movement
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path d="M35 31.6667V8.33333C35 6.49238 33.5076 5 31.6667 5H8.33333C6.49238 5 5 6.49238 5 8.33333V31.6667C5 33.5076 6.49238 35 8.33333 35H31.6667C33.5076 35 35 33.5076 35 31.6667Z" stroke="currentColor" stroke-width="2"/>
-                            <path d="M20 28.3333C24.6024 28.3333 28.3333 24.6024 28.3333 20C28.3333 15.3976 24.6024 11.6667 20 11.6667C15.3976 11.6667 11.6667 15.3976 11.6667 20C11.6667 24.6024 15.3976 28.3333 20 28.3333Z" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Showcase Your Work</h3>
-                    <p class="feature-description">
-                        Put your cooperative in the spotlight, showcase your achievements and connect with like-minded innovators
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Governance Section -->
-    <section id="governance" class="section section-white">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Leadership</span>
-                <h2 class="section-title">Meet Our Coordination Team</h2>
-                <p class="section-subtitle">
-                    Dedicated leaders driving the YECN mission forward
-                </p>
-            </div>
-            <div class="team-grid">
-                <div class="team-card featured">
-                    <div class="team-image">
-                        <div class="team-placeholder">AL</div>
-                    </div>
-                    <div class="team-info">
-                        <h3 class="team-name">Anna Loscalzo</h3>
-                        <p class="team-role">President of YECN</p>
-                        <p class="team-description">
-                            YECN representative at Cooperatives Europe Board
-                        </p>
-                        <a href="https://www.linkedin.com/in/anna-loscalzo-a9a3b156/" class="team-link" target="_blank">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
+                    <div class="benefit-content">
+                        <div class="benefit-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 5L25 15L35 16.25L27.5 23.75L29.5 35L20 29.5L10.5 35L12.5 23.75L5 16.25L15 15L20 5Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            LinkedIn Profile
-                        </a>
+                        </div>
+                        <h3>Learn & Exchange</h3>
+                        <p>Connect with young cooperators across Europe, exchange experiences, skills and best practices</p>
                     </div>
                 </div>
-                <div class="team-card">
-                    <div class="team-image">
-                        <div class="team-placeholder">HG</div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-visual">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Conference events">
+                        <div class="benefit-overlay"></div>
                     </div>
-                    <div class="team-info">
-                        <h3 class="team-name">Helena Gorroño</h3>
-                        <p class="team-role">YECN Representative</p>
-                        <p class="team-description">
-                            Vice-President for Europe at ICA's Youth Network Executive Committee
-                        </p>
-                        <a href="https://www.linkedin.com/in/helenagmarsal/" class="team-link" target="_blank">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
+                    <div class="benefit-content">
+                        <div class="benefit-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect x="8" y="10" width="24" height="22" rx="2" stroke="currentColor" stroke-width="2.5"/>
+                                <path d="M8 16H32" stroke="currentColor" stroke-width="2.5"/>
+                                <circle cx="14" cy="22" r="2" fill="currentColor"/>
+                                <circle cx="20" cy="22" r="2" fill="currentColor"/>
+                                <circle cx="26" cy="22" r="2" fill="currentColor"/>
                             </svg>
-                            LinkedIn Profile
-                        </a>
+                        </div>
+                        <h3>Exclusive Events</h3>
+                        <p>Access conferences, workshops, and networking events at national and EU level</p>
                     </div>
                 </div>
-                <div class="team-card">
-                    <div class="team-image">
-                        <div class="team-placeholder">MD</div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-visual">
+                        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&q=80" alt="Community impact">
+                        <div class="benefit-overlay"></div>
                     </div>
-                    <div class="team-info">
-                        <h3 class="team-name">Mathilde Delabie</h3>
-                        <p class="team-role">Coordination Support</p>
-                        <p class="team-description">
-                            Supporting YECN operations and member engagement
-                        </p>
+                    <div class="benefit-content">
+                        <div class="benefit-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="15" r="5" stroke="currentColor" stroke-width="2.5"/>
+                                <path d="M10 35C10 28 14 25 20 25C26 25 30 28 30 35" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Create Impact</h3>
+                        <p>Be part of a community creating opportunities for young cooperators across the movement</p>
                     </div>
                 </div>
-                <div class="team-card">
-                    <div class="team-image">
-                        <div class="team-placeholder">PR</div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-visual">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80" alt="Showcase work">
+                        <div class="benefit-overlay"></div>
                     </div>
-                    <div class="team-info">
-                        <h3 class="team-name">Paola Rosatelli</h3>
-                        <p class="team-role">Coordination Support</p>
-                        <p class="team-description">
-                            Supporting YECN operations and member engagement
-                        </p>
+                    <div class="benefit-content">
+                        <div class="benefit-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect x="8" y="8" width="24" height="24" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                                <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="2.5"/>
+                            </svg>
+                        </div>
+                        <h3>Showcase Your Work</h3>
+                        <p>Put your cooperative in the spotlight and connect with like-minded innovators</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Members Section -->
-    <section id="members" class="section section-dark">
+    <!-- Team Section -->
+    <section id="team" class="section-team">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge light">Community</span>
-                <h2 class="section-title light">Meet the Members</h2>
-                <p class="section-subtitle light">
-                    Join hundreds of young cooperators shaping the future
-                </p>
+            <div class="section-header-center">
+                <span class="section-label">Leadership</span>
+                <h2 class="section-heading">Meet Our Coordination Team</h2>
+                <p class="section-text">Passionate leaders driving YECN forward</p>
             </div>
-            <div class="cta-box">
-                <div class="cta-content">
-                    <div class="cta-icon">💡</div>
-                    <div>
-                        <h3 class="cta-title">Your First Step</h3>
-                        <p class="cta-text">Fill out your profile on the Members Site - it only takes 15 minutes</p>
+            
+            <div class="team-showcase">
+                <div class="team-member featured">
+                    <div class="member-card">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=80" alt="Anna Loscalzo">
+                            <div class="member-badge">President</div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Anna Loscalzo</h3>
+                            <p class="member-role">President of YECN</p>
+                            <p class="member-desc">YECN representative at Cooperatives Europe Board</p>
+                            <a href="https://www.linkedin.com/in/anna-loscalzo-a9a3b156/" class="member-link" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <a href="#" class="btn btn-white">Complete Your Profile</a>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-card">
+                            <div class="member-image">
+                                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80" alt="Helena Gorroño">
+                            </div>
+                            <div class="member-info">
+                                <h3>Helena Gorroño</h3>
+                                <p class="member-role">YECN Representative</p>
+                                <p class="member-desc">Vice-President for Europe at ICA Youth Network</p>
+                                <a href="https://www.linkedin.com/in/helenagmarsal/" class="member-link" target="_blank">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
+                                    </svg>
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-card">
+                            <div class="member-image">
+                                <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=600&q=80" alt="Mathilde Delabie">
+                            </div>
+                            <div class="member-info">
+                                <h3>Mathilde Delabie</h3>
+                                <p class="member-role">Coordination Support</p>
+                                <p class="member-desc">Supporting YECN operations and member engagement</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-card">
+                            <div class="member-image">
+                                <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&q=80" alt="Paola Rosatelli">
+                            </div>
+                            <div class="member-info">
+                                <h3>Paola Rosatelli</h3>
+                                <p class="member-role">Coordination Support</p>
+                                <p class="member-desc">Supporting YECN operations and member engagement</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Resources Section -->
-    <section id="resources" class="section section-white">
+    <section id="resources" class="section-resources">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Resources</span>
-                <h2 class="section-title">Work Plan & Documentation</h2>
+            <div class="section-header-center">
+                <span class="section-label">Resources</span>
+                <h2 class="section-heading">Work Plans & Documentation</h2>
             </div>
-            <div class="resources-grid">
-                <a href="https://coopseurope.coop/wp-content/uploads/2023/06/FINAL_YECN_Work_Plan_2023-2024-1.pdf" class="resource-card" target="_blank">
-                    <div class="resource-icon">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <path d="M20 4H8C6.89543 4 6 4.89543 6 6V26C6 27.1046 6.89543 28 8 28H24C25.1046 28 26 27.1046 26 26V10L20 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20 4V10H26" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+            
+            <div class="resources-showcase">
+                <a href="https://coopseurope.coop/wp-content/uploads/2023/06/FINAL_YECN_Work_Plan_2023-2024-1.pdf" class="resource-large" target="_blank">
+                    <div class="resource-bg">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Work plan">
+                        <div class="resource-overlay"></div>
                     </div>
-                    <h3 class="resource-title">YECN Work Plan 2023-2024</h3>
-                    <p class="resource-description">Download our comprehensive work plan and strategic priorities</p>
-                    <div class="resource-arrow">→</div>
+                    <div class="resource-content">
+                        <div class="resource-icon-large">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M28 6H12C10.8954 6 10 6.89543 10 8V40C10 41.1046 10.8954 42 12 42H36C37.1046 42 38 41.1046 38 40V16L28 6Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M28 6V16H38" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>YECN Work Plan 2023-2024</h3>
+                        <p>Download our comprehensive strategic roadmap</p>
+                        <div class="resource-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
                 </a>
-                <div class="resource-card">
-                    <div class="resource-icon">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <path d="M16 4V16M16 16L22 10M16 16L10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M28 20V26C28 27.1046 27.1046 28 26 28H6C4.89543 28 4 27.1046 4 26V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                
+                <div class="resources-small">
+                    <div class="resource-small">
+                        <div class="resource-small-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 4V16M16 16L22 10M16 16L10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M28 20V26C28 27.1046 27.1046 28 26 28H6C4.89543 28 4 27.1046 4 26V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Statutes & Structure</h4>
+                            <p>Organization framework</p>
+                        </div>
                     </div>
-                    <h3 class="resource-title">Working Group Statutes</h3>
-                    <p class="resource-description">Official statutes and organizational structure</p>
-                    <div class="resource-arrow">→</div>
-                </div>
-                <div class="resource-card">
-                    <div class="resource-icon">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <path d="M26 16C26 21.5228 21.5228 26 16 26C10.4772 26 6 21.5228 6 16C6 10.4772 10.4772 6 16 6C21.5228 6 26 10.4772 26 16Z" stroke="currentColor" stroke-width="2"/>
-                            <path d="M16 10V16L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                    
+                    <div class="resource-small">
+                        <div class="resource-small-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect x="6" y="8" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 12H26" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="11" cy="18" r="1.5" fill="currentColor"/>
+                                <circle cx="16" cy="18" r="1.5" fill="currentColor"/>
+                                <circle cx="21" cy="18" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Events Calendar</h4>
+                            <p>Upcoming activities</p>
+                        </div>
                     </div>
-                    <h3 class="resource-title">Events Calendar</h3>
-                    <p class="resource-description">Stay updated with upcoming events and meetings</p>
-                    <div class="resource-arrow">→</div>
+                    
+                    <div class="resource-small">
+                        <div class="resource-small-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 4L20 12L28 13L22 19L24 28L16 23L8 28L10 19L4 13L12 12L16 4Z" stroke="currentColor" stroke-width="2" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Latest News</h4>
+                            <p>Community updates</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section id="contact" class="section section-cta">
+    <!-- Join CTA -->
+    <section id="join" class="section-join">
         <div class="container">
-            <div class="cta-final">
-                <h2 class="cta-final-title">Ready to Make an Impact?</h2>
-                <p class="cta-final-text">Join the Youth European Cooperatives Network and be part of the movement shaping Europe's cooperative future</p>
-                <div class="cta-final-buttons">
-                    <a href="#members" class="btn btn-primary-large">Become a Member</a>
-                    <a href="mailto:yecn@coopseurope.coop" class="btn btn-outline-large">Contact Us</a>
+            <div class="join-card">
+                <div class="join-bg">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80" alt="University campus">
+                    <div class="join-overlay"></div>
+                </div>
+                <div class="join-content">
+                    <div class="join-icon">💡</div>
+                    <h2>Ready to Join the Movement?</h2>
+                    <p>Take the first step by completing your member profile - it only takes 15 minutes</p>
+                    <div class="join-buttons">
+                        <a href="#" class="btn btn-white-large">
+                            Complete Your Profile
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:yecn@coopseurope.coop" class="btn btn-ghost-large">Contact Us</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -300,40 +451,56 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-brand">
-                    <div class="footer-logo">YECN</div>
-                    <p class="footer-description">Youth European Cooperatives Network - Empowering young cooperators across Europe</p>
+                    <div class="footer-logo">
+                        <div class="brand-icon small">
+                            <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25" r="23" stroke="url(#gradient2)" stroke-width="3"/>
+                                <path d="M25 10L30 20L40 22L32 30L34 40L25 35L16 40L18 30L10 22L20 20L25 10Z" fill="url(#gradient2)"/>
+                                <defs>
+                                    <linearGradient id="gradient2" x1="0" y1="0" x2="50" y2="50">
+                                        <stop offset="0%" stop-color="#FF6B6B"/>
+                                        <stop offset="50%" stop-color="#4ECDC4"/>
+                                        <stop offset="100%" stop-color="#45B7D1"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>YECN</span>
+                    </div>
+                    <p class="footer-desc">Youth European Cooperatives Network - Empowering young cooperators to shape Europe's future</p>
                 </div>
+                
                 <div class="footer-links">
-                    <div class="footer-column">
-                        <h4 class="footer-title">Network</h4>
-                        <ul class="footer-list">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#why-join">Why Join</a></li>
-                            <li><a href="#governance">Governance</a></li>
-                            <li><a href="#members">Members</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-title">Resources</h4>
-                        <ul class="footer-list">
-                            <li><a href="https://coopseurope.coop/wp-content/uploads/2023/06/FINAL_YECN_Work_Plan_2023-2024-1.pdf" target="_blank">Work Plan</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Media Gallery</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-title">Connect</h4>
-                        <ul class="footer-list">
-                            <li><a href="https://globalyouth.coop/" target="_blank">ICA Youth Network</a></li>
-                            <li><a href="https://coopseurope.coop/" target="_blank">Cooperatives Europe</a></li>
-                            <li><a href="mailto:yecn@coopseurope.coop">Contact</a></li>
-                        </ul>
-                    </div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#why-join">Why Join</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://coopseurope.coop/wp-content/uploads/2023/06/FINAL_YECN_Work_Plan_2023-2024-1.pdf" target="_blank">Work Plan</a></li>
+                        <li><a href="https://globalyouth.coop/" target="_blank">ICA Youth Network</a></li>
+                        <li><a href="https://coopseurope.coop/" target="_blank">Cooperatives Europe</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:yecn@coopseurope.coop">yecn@coopseurope.coop</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
                 </div>
             </div>
+            
             <div class="footer-bottom">
                 <p>&copy; 2025 Youth European Cooperatives Network. All rights reserved.</p>
             </div>
@@ -341,25 +508,40 @@
     </footer>
 
     <script>
-        // Smooth scrolling
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    const offset = 80;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
                 }
             });
         });
 
-        // Navbar scroll effect
+        // Navbar scroll
+        const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
+            if (window.scrollY > 100) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
             }
+        });
+
+        // Parallax effect for hero images
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const cards = document.querySelectorAll('.image-card');
+            cards.forEach((card, index) => {
+                const speed = 0.5 + (index * 0.1);
+                card.style.transform = `translateY(${scrolled * speed}px)`;
+            });
         });
     </script>
 </body>
